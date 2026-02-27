@@ -87,3 +87,29 @@ LLM возвращает JSON:
 Админам отправляется уведомление.
 
 ---
+
+## 5. Запуск
+
+
+docker-compose up -d --build
+
+
+Проверка логов:
+
+
+docker logs -f ai-hr-bot_bot_1
+
+
+---
+
+# 🌐 Webhook
+
+Webhook устанавливается автоматически при старте:
+
+
+https://your-domain.com/webhook
+
+
+nginx проксирует на FastAPI.
+
+---
